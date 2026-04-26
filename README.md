@@ -34,7 +34,7 @@ This project answers these questions using data analytics and visualization.
 ## 📊 Dashboard Overview
 
 ### 🔹 Executive Summary
-![Executive Dashboard](outputs/Images/executive.png)
+![Executive Dashboard](outputs/Images/Executive.png)
 
 **Key Highlights:**
 - Avg basket size ≈ 10 items  
@@ -44,7 +44,7 @@ This project answers these questions using data analytics and visualization.
 ---
 
 ### 🔹 Product Performance & Loyalty Analysis
-![Product Dashboard](outputs/Images/product.png)
+![Product Dashboard](outputs/Images/Product.png)
 
 **Key Insights:**
 - Top products contribute ~30–40% of total orders  
@@ -54,7 +54,7 @@ This project answers these questions using data analytics and visualization.
 ---
 
 ### 🔹 Department Performance & Growth Opportunities
-![Department Dashboard](outputs/Images/department.png)
+![Department Dashboard](outputs/Images/Department.png)
 
 **Key Insights:**
 - Top 5 departments contribute ~75–80% of total orders  
@@ -64,7 +64,7 @@ This project answers these questions using data analytics and visualization.
 ---
 
 ### 🔹 Basket Behavior & Order Timing
-![Basket Dashboard](outputs/Images/basket.png)
+![Basket Dashboard](outputs/Images/Basket.png)
 
 **Key Insights:**
 - Peak ordering time: **10 AM – 3 PM**  
