@@ -1,89 +1,124 @@
-# Instacart Analytics (Executable Project)
+# 🛒 Instacart Business Insights Analytics
 
-This project generates analysis tables/charts from PostgreSQL materialized views and can also load final CSV outputs back into PostgreSQL for Power BI.
+## 📌 Project Overview
+This project analyzes Instacart’s customer order data to uncover **purchasing behavior, product performance, and growth opportunities**.
 
-## 1) Prerequisites
+The objective is to transform raw transactional data into **actionable business insights** that improve:
+- Customer retention  
+- Order volume  
+- Product strategy  
+- Revenue growth  
 
-- Python 3.10+
-- PostgreSQL running with the Instacart warehouse database
-- Accessible views used by this project (for example: `mv_reorder_rate`, `mv_reorder_product_v2`, `mv_reorder_department_v2`, `mv_reorder_time_v2`, `mv_orders_time_v2`, `mv_product_performance_v2`, `mv_department_performance_v2`, `mv_basket_analysis_v2`)
+---
 
-## 2) Setup
+## ❓ Problem Statement
+Instacart generates large volumes of transactional data, but key business questions remain:
 
-From project root:
+- What drives higher order volume?
+- Which products contribute most to sales?
+- How does basket size impact revenue?
+- Which departments need improvement?
+- When do customers order the most?
 
-```bash
-python -m venv .venv
-.venv\\Scripts\\activate
-pip install -r requirements.txt
-```
+This project answers these questions using data analytics and visualization.
 
-## 3) Database Configuration
+---
 
-Set environment variables (PowerShell example):
+## 🛠️ Tech Stack
+- **SQL** → Data extraction & transformation  
+- **Python (Pandas)** → Data cleaning & analysis  
+- **Power BI** → Interactive dashboards  
 
-```powershell
-$env:PGDATABASE = "Instacart_Dw"
-$env:PGUSER = "postgres"
-$env:PGPASSWORD = "root123"
-$env:PGHOST = "localhost"
-$env:PGPORT = "5432"
-```
+---
 
-If these are not set, defaults above are used.
+## 📊 Dashboard Overview
 
-## 4) Run the Project (One Command)
+### 🔹 Executive Summary
+![Executive Dashboard](output/images/executive.png)
 
-Generate all analysis outputs:
+**Key Highlights:**
+- Avg basket size ≈ 10 items  
+- Medium baskets contribute ~45–50% of total orders  
+- Reorders account for ~55–60% → strong retention  
 
-```bash
-python run_project.py
-```
+---
 
-Windows shortcut:
+### 🔹 Product Performance & Loyalty Analysis
+![Product Dashboard](output/images/product.png)
 
-```powershell
-run_project.bat
-```
+**Key Insights:**
+- Top products contribute ~30–40% of total orders  
+- High reorder rates (0.75–0.85) → strong loyalty  
+- Majority products fall under low loyalty segment  
 
-This creates/updates:
-- `outputs/charts/*.png`
-- `outputs/tables/*.csv`
+---
 
-## 5) Optional: Load CSV Outputs to PostgreSQL
+### 🔹 Department Performance & Growth Opportunities
+![Department Dashboard](output/images/department.png)
 
-Run analysis and then load tables to PostgreSQL schema `bi`:
+**Key Insights:**
+- Top 5 departments contribute ~75–80% of total orders  
+- Some departments show low share but high potential  
+- Opportunity for category optimization  
 
-```bash
-python run_project.py --load-to-postgres --create-views --create-indexes
-```
+---
 
-If CSV outputs already exist and you only want to load:
+### 🔹 Basket Behavior & Order Timing
+![Basket Dashboard](output/images/basket.png)
 
-```bash
-python run_project.py --skip-analysis --load-to-postgres
-```
+**Key Insights:**
+- Peak ordering time: **10 AM – 3 PM**  
+- Medium baskets drive most revenue (~50–55%)  
+- Large baskets are underutilized  
 
-## 6) Legacy Commands (Still Supported)
+---
 
-Run analysis only:
+## 📈 Key Business Insights
+- Strong customer retention due to high reorder rates  
+- Revenue concentrated in a few products & departments  
+- Medium baskets are the main revenue drivers  
+- Growth opportunities exist in:
+  - Large basket expansion  
+  - Low-performing departments  
+- Peak-hour demand can be leveraged for growth  
 
-```bash
-python -m src.analysis
-```
+---
 
-Run loader only:
+## 🚀 Recommended Actions
+- 🎯 Target peak hours with promotions  
+- 📦 Upsell medium baskets to large baskets  
+- 🛒 Promote top-performing products  
+- 📉 Improve low-performing departments  
+- 🔁 Increase retention via loyalty programs  
 
-```bash
-python -m src.load_analysis_tables_to_postgres --create-views --create-indexes
-```
+---
 
-## 7) Submission Tip
+## 📂 Project Structure
+instacart-business-insights-analytics/
+│
+├── data/
+├── notebooks/
+├── sql/
+├── dashboards/
+├── output/
+│ └── images/
+│ ├── executive.png
+│ ├── product.png
+│ ├── department.png
+│ └── basket.png
+└── README.md
 
-For your college demo, run this in front of your teacher:
 
-```bash
-python run_project.py --load-to-postgres --create-views --create-indexes
-```
+---
 
-That proves the project is executable end-to-end.
+## 📊 Outcome
+This project demonstrates:
+- End-to-end data analytics workflow  
+- Strong business understanding  
+- Data-driven decision making  
+
+---
+
+## 🔗 Author
+**Geethesh**  
+Aspiring Data Analyst |Business Analyst | SQL | Python | Power BI
