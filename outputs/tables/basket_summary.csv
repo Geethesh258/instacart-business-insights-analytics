@@ -1,0 +1,7 @@
+metric,value
+total_orders,3214874.0
+avg_basket_size,10.09
+median_basket_size,8.0
+p75_basket_size,14.0
+p90_basket_size,20.0
+max_basket_size,145.0

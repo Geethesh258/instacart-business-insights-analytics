@@ -1,0 +1,5 @@
+product_loyalty_band,product_count,avg_reorder_rate_pct,total_orders
+Low Loyalty Product,37393,29.52,5516883.0
+Potential Loyal Product,8309,54.16,9770656.0
+Loyal Product,3700,66.25,12904980.0
+Champion Product,275,78.29,4241970.0

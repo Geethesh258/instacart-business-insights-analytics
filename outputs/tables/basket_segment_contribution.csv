@@ -1,0 +1,4 @@
+basket_segment,order_count,avg_basket_size,total_items,order_share_pct,item_share_pct
+Small (1-5 items),1001179,3.18,3181789.0,31.14,9.81
+Medium (6-15 items),1592191,9.67,15394283.0,49.53,47.46
+Large (16+ items),621504,22.3,13858417.0,19.33,42.73
